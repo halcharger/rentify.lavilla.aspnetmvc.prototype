@@ -5,13 +5,43 @@ namespace website.Controllers
     public class HomeController : Controller
     {
         [Route("")]
-        public ActionResult Index()
+        public ActionResult home()
         {
             return View();
         }
 
         [Route("overview")]
-        public ActionResult Overview()
+        public ActionResult overview()
+        {
+            return View();
+        }
+
+        [Route("gallery")]
+        public ActionResult gallery()
+        {
+            return View();
+        }
+
+        [Route("rates")]
+        public ActionResult rates()
+        {
+            return View();
+        }
+
+        [Route("availability")]
+        public ActionResult availability()
+        {
+            return View();
+        }
+
+        [Route("reviews")]
+        public ActionResult reviews()
+        {
+            return View();
+        }
+
+        [Route("contact")]
+        public ActionResult contact()
         {
             return View();
         }
