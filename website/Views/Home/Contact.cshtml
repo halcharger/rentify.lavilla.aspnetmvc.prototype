@@ -1,17 +1,76 @@
-﻿@{
-    ViewBag.Title = "Contact";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+﻿<div id="main-content">
+    <div class="container">
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+        <div class="container">
+            <div class="column-7">
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+                <img src="images/googlemap.png" />
+
+            </div>
+            <div class="column-4">
+
+                <form action="#" class="validate-form scroll-on-error-form has-validation-callback">
+                    <!-- post form to send-message.php - example: http://aureliend.com/lavilla-html/send-message.php.txt -->
+                    <input type="hidden" name="no_post_form_type" value="message">
+                    <p>
+                        <i>If you want to send us a message just use the contact form below.</i>
+                    </p>
+                    <p>
+                        <label for="name">Your name</label>
+                        <input id="name" name="name" type="text" data-validation="required">
+                    </p>
+                    <p>
+                        <label for="email">Your email</label>
+                        <input id="email" name="email" type="text" data-validation="required email">
+                    </p>
+                    <p>
+                        <label for="message">Your message</label>
+                        <textarea id="message" name="message" data-validation="required"></textarea>
+                    </p>
+                    <p class="aligncenter">
+                        <input class="aligncenter button" type="submit" value="Send message">
+                    </p>
+                    <p class="form-processing">
+                        Processing...
+                    </p>
+                </form>
+
+            </div><!-- end .col-half-width-left -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="column-6">
+            <h2 class="underlined">Directions</h2>
+            <p class="sub-heading">Don't get lost: follow the white rabbit.</p>
+
+            <h3 class="smaller">From Heaventown</h3>
+            <ul class="disc-bullet">
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Donec pharetra accumsan arcu non consequat.</li>
+                <li>Mauris nec leo luctus, porttitor est at, ultricies elit.</li>
+            </ul>
+            <h3 class="smaller">From Paradiseville</h3>
+            <ul class="disc-bullet">
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Donec pharetra accumsan arcu non consequat.</li>
+                <li>Mauris nec leo luctus, porttitor est at, ultricies elit.</li>
+            </ul>
+
+
+        </div>
+        <div class="column-5">
+            <h2 class="underlined">Contact Details</h2>
+            <p class="sub-heading">Call us anytime, no really, call us anytime.</p>
+            <ul>
+                <li>Lavilla</li>
+                <li>32 Ocean Road</li>
+                <li>Beachville, Paradise</li>
+                <li>Phone: +871 9326 988</li>
+                <li>Fax: +871 9326 989</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+</div>

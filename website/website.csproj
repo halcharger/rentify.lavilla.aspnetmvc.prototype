@@ -204,6 +204,7 @@
     <Content Include="images\accommodation-details\thumbs\room.jpg" />
     <Content Include="images\accommodation-details\thumbs\sink.jpg" />
     <Content Include="images\bg\bg.jpg" />
+    <Content Include="images\googlemap.png" />
     <Content Include="images\hero-images\sea-big.jpg" />
     <Content Include="images\inner-images\house-right.jpg" />
     <Content Include="images\loader-gif\loader-black.gif" />
