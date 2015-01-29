@@ -209,6 +209,10 @@
     <Content Include="images\loader-gif\loader-black.gif" />
     <Content Include="images\loader-gif\loader-white.gif" />
     <Content Include="images\logo\logo-lavilla.png" />
+    <Content Include="images\profiles\family.jpg" />
+    <Content Include="images\profiles\jane.jpg" />
+    <Content Include="images\profiles\lucy.jpg" />
+    <Content Include="images\profiles\sarah.jpg" />
     <Content Include="images\views\forest.jpg" />
     <Content Include="images\views\mountains.jpg" />
     <Content Include="images\views\river.jpg" />

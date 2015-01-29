@@ -825,7 +825,7 @@ hr {
 /* 3.2) hero image and transition image */
 
 #hero-img {
-	background: #000 url(../content/images/loader-gif/loader-black.gif) no-repeat center center;
+	background: #000 url(../images/loader-gif/loader-black.gif) no-repeat center center;
 	position: relative;
 }
 
@@ -1640,7 +1640,7 @@ span.help-block.form-error {
 }
 
 .form-processing {
-	background: url(../content/images/loader-gif/loader-white.gif) no-repeat center left;
+	background: url(../images/loader-gif/loader-white.gif) no-repeat center left;
 	display: none;
 	height: 32px;
 	line-height: 32px;
@@ -3078,3 +3078,23 @@ h3 + div.featured-img {
 
 
 /* Copyright AurelienD http://themeforest.net/user/AurelienD?ref=AurelienD */
+
+
+.rating {
+    unicode-bidi:bidi-override;
+    direction:rtl;
+    font-size:30px;
+}
+.rating span.star {
+    font-family:FontAwesome;
+    font-weight:normal;
+    font-style:normal;
+    display:inline-block;
+}
+.rating span.star:before {
+    content:"\f006";
+    padding-right:5px;
+    color:#999999;
+}
+
+span.star.filled:before{ color:#e3cf7a; content:"\f005";}
