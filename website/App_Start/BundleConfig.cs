@@ -1,31 +1,36 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
 namespace website
 {
     public class BundleConfig
     {
-        // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+            bundles.Add(new ScriptBundle("~/bundles/lavilla").Include(
+                      "~/Scripts/hoverIntent.js",
+                      "~/Scripts/superfish.min.js",
+                      "~/Scripts/jquery.customSelect.min.js",
+                      "~/Scripts/jquery-ui.min.js",
+                      "~/Scripts/masonry.min.js",
+                      "~/Scripts/jquery.form-validator.min.js",
+                      "~/Scripts/lavilla-datepick.js",
+                      "~/Scripts/owl.carousel.js",
+                      "~/Scripts/lavilla-functions.js"
+                      ));
 
-            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*"));
-
-            // Use the development version of Modernizr to develop with and learn from. Then, when you're
-            // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
-            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
-
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
-
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+            bundles.Add(new StyleBundle("~/Content/css/lavilla").Include(
+                      "~/Content/reset.css",
+                      "~/Content/styles.css",
+                      "~/Content/responsive-grid.default.css",
+                      "~/Content/responsive-grid.big-desktop.css",
+                      "~/Content/colours.blue-orange.css",
+                      "~/Content/datepicker.css"
+                      ));
+            bundles.Add(new StyleBundle("~/Content/css/owl").Include(
+                      "~/Content/owl.carousel.css",
+                      "~/Content/owl.theme.css",
+                      "~/Content/owl.transitions.css"
+                      ));
         }
     }
 }
