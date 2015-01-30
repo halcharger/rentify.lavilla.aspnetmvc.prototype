@@ -1,0 +1,63 @@
+﻿<div id="main-content">
+    <form action="#" class="validate-form scroll-on-error-form has-validation-callback">
+        <div class="container">
+            <div class="form-content-centered">
+
+                <h2 class="form-title">Fill in the booking form below!</h2>
+                <p class="inner-container">
+                    <label for="check-in-date">Check-in date</label>
+                    <input id="check-in-date" name="check-in_date" class="input-datepicker hasDatepicker" value="" type="text" data-validation="required date future_date" data-validation-format="mm/dd/yyyy"><button type="button" class="ui-datepicker-trigger" tabindex="-1"></button>
+                </p>
+                <p class="inner-container">
+                    <label for="check-out-date">Check-out date</label>
+
+                    <input id="check-out-date" name="check-out_date" class="input-datepicker hasDatepicker" type="text" value="" data-validation="required date future_date check_out_date" data-validation-format="mm/dd/yyyy"><button type="button" class="ui-datepicker-trigger" tabindex="-1"></button>
+                </p>
+
+                <div class="inner-container">
+                    <div class="column-2">
+                        <p>
+                            <label for="adults_number">Adults number</label>
+                            <select id="adults_number" name="adults_number" class="hasCustomSelect" style="-webkit-appearance: menulist-button; position: absolute; opacity: 0; height: 50px; font-size: 15px; width: 170px;">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select><span class="select-box" style="display: inline-block;"><span class="select-boxInner" style="width: 289px; display: inline-block;">1</span></span>
+                        </p>
+                    </div>
+                    <div class="column-2 column-last">
+                        <p>
+                            <label for="children_number">Children number</label>
+                            <select id="children_number" name="children_number" class="hasCustomSelect" style="-webkit-appearance: menulist-button; position: absolute; opacity: 0; height: 50px; font-size: 15px; width: 170px;">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select><span class="select-box" style="display: inline-block;"><span class="select-boxInner" style="width: 289px; display: inline-block;">1</span></span>
+                        </p>
+                    </div>
+                </div>
+
+                <p>
+                    <label for="name">Your name</label>
+                    <input id="name" name="name" type="text" data-validation="required">
+                </p>
+                <p>
+                    <label for="email">Your email</label>
+                    <input id="email" name="email" type="text" data-validation="required email">
+                </p>
+
+                <p class="aligncenter">
+                    <input class="aligncenter button" type="button" onclick="javascript: window.location = '/';" value="Send Booking Request"/> <strong>OR</strong>
+                    <input class="aligncenter button" type="button" onclick="javascript: window.location = '/pay';" value="Pay online"/>
+                </p>
+
+            </div><!-- end .form-content-centered -->
+            <div class="form-result-wrapper"></div>
+
+        </div><!-- end .container -->
+    </form>
+</div>

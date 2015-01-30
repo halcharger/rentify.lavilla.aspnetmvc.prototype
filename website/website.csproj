@@ -250,6 +250,7 @@
     <Content Include="Views\Home\rates.cshtml" />
     <Content Include="Views\Home\availability.cshtml" />
     <Content Include="Views\Home\reviews.cshtml" />
+    <Content Include="Views\Home\booking.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

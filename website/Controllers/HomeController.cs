@@ -46,5 +46,11 @@ namespace website.Controllers
             return View();
         }
 
+        [Route("booking")]
+        public ActionResult booking()
+        {
+            return View();
+        }
+
     }
 }
