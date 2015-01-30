@@ -52,5 +52,12 @@ namespace website.Controllers
             return View();
         }
 
+
+        [Route("pay")]
+        public ActionResult pay()
+        {
+            return View();
+        }
+
     }
 }
